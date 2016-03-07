@@ -16,7 +16,7 @@
 
 @implementation MMTweenAnimation
 
-+ (instancetype)animation
++ (instancetype)animation:(int)a
 {
     MMTweenAnimation *tweaner = [super animationWithBlock:^BOOL(id target, POPCustomAnimation *animation) {
         
@@ -25,8 +25,8 @@
         double t = (animation.currentTime-animation.beginTime);
         double d = anim.duration;
         
-//        NSLog(@"%@",NSStringFromClass(anim.fromValue.class));
-//        NSLog(@"%@",NSStringFromClass(anim.toValue.class));
+        NSLog(@"%@",NSStringFromClass(anim.fromValue.class));
+        NSLog(@"%@",NSStringFromClass(anim.toValue.class));
         
         NSAssert(anim.fromValue.count==anim.toValue.count, @"fromValue.count != toValue.count");
         

@@ -29,6 +29,6 @@ typedef void(^MMTweenAnimationBlock)(double c,   //current time offset(0->durati
 @property (nonatomic, assign) MMTweenFunctionType functionType;
 @property (nonatomic, assign) MMTweenEasingType   easingType;
 
-+ (instancetype)animation;
++ (instancetype)animation:(int)a;
 
 @end
